@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
-    <title>Codelândia</title>
+    <title>Seja Melhor - Blog</title>
   </head>
   <body>
     <header class="header">
       <div class="headerSub">
         <div class="title">
-          <p>SejaMelhor</p>
-          <p>blog</p>
+          <a href="/">SejaMelhor</a>
+          <a href="/">blog</a>
         </div>
 
         <div id="divSearch">
@@ -104,5 +104,18 @@
     </main>
 
     <footer> Developer by Moisés Amorim </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin:'top',
+        distance: '50px',
+        duration: 1000,
+        reset: true
+      });
+
+      ScrollReveal().reveal('.blog', {delay: 200 });
+      ScrollReveal().reveal('.data-icon', {delay: 300 });
+      ScrollReveal().reveal('.blogText', {delay: 400 });
+    </script>
   </body>
 </html>
